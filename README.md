@@ -31,15 +31,15 @@ graph LR
 ```Plaintext
 weather-etl-pipeline/  
 ├── src/  
-│   ├── extract.py    \# Conexão com API e tratamento inicial  
-│   ├── load.py       \# Lógica de Banco de Dados e Deduplicação  
-│   └── pipeline.py   \# Orquestrador e Agendador (Entrypoint)  
-├── logs/             \# Logs persistidos do container  
+│   ├── extract.py    # Conexão com API e tratamento inicial  
+│   ├── load.py       # Lógica de Banco de Dados e Deduplicação  
+│   └── pipeline.py   # Orquestrador e Agendador (Entrypoint)  
+├── logs/             # Logs persistidos do container  
 ├── docker-compose.yml  
 ├── Dockerfile  
-├── Makefile          \# Atalhos de comandos  
+├── Makefile          # Atalhos de comandos  
 ├── requirements.txt  
-└── .env.example      \# Template de variáveis de ambiente
+└── .env.example      # Template de variáveis de ambiente
 ```
 
 ## **Como Executar**
