@@ -10,12 +10,12 @@ Snippet de código
 
 ```mermaid
 graph LR  
-    A\[Open-Meteo API\] \--\>|JSON| B(Container ETL Python)  
-    B \--\>|Extração & Limpeza| C{Verificação de Duplicidade}  
-    C \--\>|Novos Dados| D\[(PostgreSQL DB)\]  
-    C \--\>|Dados Existentes| E\[Ignora\]  
-    D \--\>|Persistência| F\[Docker Volume\]  
-    G\[PgAdmin4\] \--\>|Interface Visual| D
+    A[Open-Meteo API] -->|JSON| B(Container ETL Python)  
+    B -->|Extração & Limpeza| C{Verificação de Duplicidade}  
+    C -->|Novos Dados| D[(PostgreSQL DB)]  
+    C -->|Dados Existentes| E[Ignora]  
+    D -->|Persistência| F[Docker Volume]  
+    G[PgAdmin4] -->|Interface Visual| D
 ```
 
 ## **Funcionalidades Chave**
