@@ -6,8 +6,6 @@ Um pipeline de Engenharia de Dados completo e containerizado que extrai dados me
 
 O projeto segue uma arquitetura ETL (Extract, Transform, Load) orquestrada em micro-serviços Docker:
 
-Snippet de código
-
 ```mermaid
 graph LR  
     A[Open-Meteo API] -->|JSON| B(Container ETL Python)  
